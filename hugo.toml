@@ -1,55 +1,92 @@
 baseURL = 'https://pavelstefanov.github.io/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "hello-friend-ng"
-paginate = 10
+title = 'Pavel Stefanov'
+theme = 'PaperMod'
+paginate = 5
+
+enableRobotsTXT = true
+
+googleAnalytics = 'G-PBNL09TJ6E'
+
+# pygmentsUseClasses = true
+
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+env = 'production'
+title = 'Pavel Stefanov'
+description = "Личный блог"
+keywords = [ 'Блог', 'Технологии', 'Менеджмент', 'Психология']
+DateFormat = '02.01.2006'
+defaultTheme = 'auto'
+disableThemeToggle = false
 
-  # Subtitle for home
-  homeSubtitle = "A simple and beautiful blog"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = false
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
+  [params.assets]
+  favicon = '/favicon/favicon.ico'
+  favicon16x16 = '/favicon/favicon-16x16.png'
+  favicon32x32 = '/favicon/favicon-32x32.png'
+  apple_touch_icon = '/favicon/apple-touch-icon.png'
 
-  # Enable sharing buttons, if you like
-  enableSharingButtons = true
-  
-  # Show a global language switcher in the navigation bar
-  enableGlobalLanguageMenu = true
+  [params.label]
+  text = 'Pavel Stefanov'
 
-  # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
-  images = [""]
+  [params.homeInfoParams]
+  Title = 'Привет👋 Я Паша Стефанов!'
+  Content = 'Я занимаюсь разработкой софта и здесь буду писать о своей жизни и том, что мне интересно'
 
-[taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
 
-[languages]
-  [languages.en]
-    title = "Hello Friend NG"
-    subtitle = "A simple theme for Hugo"
-    keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
+  [[params.socialIcons]]
+  name = 'github'
+  url = 'https://github.com/PavelStefanov'
 
-    [languages.en.params.logo]
-      logoText = "hello friend ng"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+  [[params.socialIcons]]
+  name = 'linkedin'
+  url = 'https://www.linkedin.com/in/stefanovpavel/'
 
-  # And you can even create generic menu
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+  [[params.socialIcons]]
+  name = 'twitter'
+  url = 'https://twitter.com/Droppi_nsk'
+
+
+[params.analytics.google]
+SiteVerificationTag = 'XYZabc'
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ 'title', 'permalink', 'summary', 'content' ]
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[[menu.main]]
+identifier = 'search'
+name = 'поиск'
+url = '/search'
+weight = 10
+
+[markup.highlight]
+noClasses = false
