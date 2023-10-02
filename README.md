@@ -1,2 +1,3 @@
-# pavelstefanov.github.io
+# pavelstefanov.su
+
 My personal blog

@@ -1,5 +1,5 @@
-baseURL = 'https://pavelstefanov.github.io/'
-title = 'Pavel Stefanov'
+baseURL = 'https://pavelstefanov.su/'
+title = 'Павел Стефанов'
 theme = 'PaperMod'
 paginate = 5
 
@@ -12,7 +12,7 @@ googleAnalytics = 'G-PBNL09TJ6E'
 
 [params]
 env = 'production'
-title = 'Pavel Stefanov'
+title = 'Павел Стефанов'
 description = "Личный блог"
 keywords = [ 'Блог', 'Технологии', 'Менеджмент', 'Психология']
 DateFormat = '02.01.2006'
@@ -20,7 +20,7 @@ defaultTheme = 'auto'
 disableThemeToggle = false
 
 ShowReadingTime = true
-ShowShareButtons = true
+ShowShareButtons = false
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 ShowCodeCopyButtons = true
@@ -42,12 +42,15 @@ tocopen = false
   apple_touch_icon = '/favicon/apple-touch-icon.png'
 
   [params.label]
-  text = 'Pavel Stefanov'
+  text = 'Павел Стефанов'
 
   [params.homeInfoParams]
-  Title = 'Привет👋 Я Паша Стефанов!'
-  Content = 'Я занимаюсь разработкой софта и здесь буду писать о своей жизни и том, что мне интересно'
+  Title = 'Привет👋 Я Павел Стефанов!'
+  Content = 'Я занимаюсь разработкой ПО и здесь буду писать о своей жизни и том, что мне интересно'
 
+  [[params.socialIcons]]
+  name = 'twitter'
+  url = 'https://twitter.com/Droppi_nsk'
 
   [[params.socialIcons]]
   name = 'github'
@@ -55,11 +58,12 @@ tocopen = false
 
   [[params.socialIcons]]
   name = 'linkedin'
-  url = 'https://www.linkedin.com/in/stefanovpavel/'
+  url = 'https://www.linkedin.com/in/stefanovpavel'
 
   [[params.socialIcons]]
-  name = 'twitter'
-  url = 'https://twitter.com/Droppi_nsk'
+  name = 'rss'
+  url = 'index.xml'
+
 
 
 [params.analytics.google]
@@ -81,6 +85,12 @@ SiteVerificationTag = 'XYZabc'
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
+
+[[menu.main]]
+identifier = 'search'
+name = 'поиск'
+url = '/search'
+weight = 10
 
 [[menu.main]]
 identifier = 'search'
