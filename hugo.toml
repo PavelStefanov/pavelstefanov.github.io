@@ -1,5 +1,5 @@
 baseURL = 'https://pavelstefanov.su/'
-title = 'Павел Стефанов'
+title = 'Pavel Stefanov'
 theme = 'PaperMod'
 paginate = 5
 
@@ -32,8 +32,8 @@ disableScrollToTop = false
 comments = false
 hidemeta = false
 hideSummary = false
-showtoc = false
-tocopen = false
+showtoc = true
+tocopen = true
 
   [params.assets]
   favicon = '/favicon/favicon.ico'
@@ -42,11 +42,11 @@ tocopen = false
   apple_touch_icon = '/favicon/apple-touch-icon.png'
 
   [params.label]
-  text = 'Павел Стефанов'
+  text = 'Блог'
 
   [params.homeInfoParams]
   Title = 'Привет👋 Я Павел Стефанов!'
-  Content = 'Я занимаюсь разработкой ПО и здесь буду писать о своей жизни и том, что мне интересно'
+  Content = '''Это мой блог, где я буду писать обо всем, что мне интересно'''
 
   [[params.socialIcons]]
   name = 'twitter'
@@ -66,8 +66,8 @@ tocopen = false
 
 
 
-[params.analytics.google]
-SiteVerificationTag = 'XYZabc'
+# [params.analytics.google]
+# SiteVerificationTag = 'XYZabc'
 
   [params.cover]
   hidden = true
@@ -86,15 +86,10 @@ SiteVerificationTag = 'XYZabc'
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
 
-[[menu.main]]
-identifier = 'search'
-name = 'поиск'
-url = '/search'
-weight = 10
 
 [[menu.main]]
 identifier = 'search'
-name = 'поиск'
+name = 'Поиск'
 url = '/search'
 weight = 10
 
